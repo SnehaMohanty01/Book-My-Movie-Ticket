@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Ticket Booking</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Book My Movie Ticket</h1>
+        
+        <div class="auth-links">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+
+        <label for="movie-select">Choose a movie:</label>
+        <select id="movie-select" name="ms"  disabled>
+            <option value="" disabled selected>Select a Movie</option>
+         
+        </select>
+
+        <label for="movie-date">Choose a Date:</label>
+        <input type="date" id="movie-date" name="md" required />
+          <br>
+          <br>
+         
+    
+    
+       <label for="location-select">Choose Location:</label>
+<select id="location-select" name="location" required>
+    <option value="" disabled selected>Select a Location</option>
+    <optgroup label="Cities">
+        <option value="bhubaneswar">Bhubaneswar</option>
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="bangalore">Bangalore</option>
+        <option value="chennai">Chennai</option>
+    </optgroup>
+    <optgroup label="Towns">
+        <option value="rourkela">Rourkela</option>
+        <option value="cuttack">Cuttack</option>
+        <option value="kharagpur">Kharagpur</option>
+        <option value="sambalpur">Sambalpur</option>
+        <option value="puri">Puri</option>
+    </optgroup>
+    <optgroup label="Villages">
+        <option value="pipili">Pipili</option>
+        <option value="konark">Konark</option>
+        <option value="jaleswar">Jaleswar</option>
+        <option value="gopalpur">Gopalpur</option>
+        <option value="chandipur">Chandipur</option>
+    </optgroup>
+</select>
+
+    
+         
+        <div class="movie-details">
+            <h2 id="selected-movie">Selected Movie: None</h2>
+            <h3 id="ticket-price">Ticket Price: ₹0</h3>
+        </div>
+
+        <!-- Screen Indicator and Seats Layout -->
+        <div class="screen">Screen</div>
+        <div class="seats-container">
+            <!-- Seats will be populated by JavaScript -->
+        </div>
+
+        <!-- Cost Display and Book Button -->
+        <div class="cost-display">
+            <h2 id="total-cost">Total Cost: ₹0</h2>
+            <button id="book-button" style="display: none;">Book Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>            
