@@ -1,6 +1,5 @@
 # 🎬 Book My Movie Ticket
 
-**Duration:** July 2024 – October 2024  
 **Tech Stack:** Java, HTML, CSS, JavaScript (Frontend) | SQL (Backend)
 
 ## 📌 Overview
